@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Florian Hoehle, mail@FlorianHoehle.de">
+    <link rel="stylesheet" href="main.css">
+    <title>Calculator</title>
+</head>
+<body>
+<header>
+    <h1>Calculator</h1>
+</header>
+<main>
+    <input type="text" id="display" readonly="true">
+    <button onclick="read('n', 0)"      id="zero"   >0</button>
+    <button onclick="read('n', 1)"      id="one"    >1</button>
+    <button onclick="read('n', 2)"      id="two"    >2</button>
+    <button onclick="read('n', 3)"      id="three"  >3</button>
+    <button onclick="read('n', 4)"      id="four"   >4</button>
+    <button onclick="read('n', 5)"      id="five"   >5</button>
+    <button onclick="read('n', 6)"      id="six"    >6</button>
+    <button onclick="read('n', 7)"      id="seven"  >7</button>
+    <button onclick="read('n', 8)"      id="eight"  >8</button>
+    <button onclick="read('n', 9)"      id="nine"   >9</button>
+    <button onclick="read('o', '+')"    id="add"    >+</button>
+    <button onclick="read('o', '-')"    id="sub"    >-</button>
+    <button onclick="read('o', '*')"    id="mul"    >x</button>
+    <button onclick="read('o', '/')"    id="div"    >/</button>
+    <button onclick="read('o', '%')"    id="perc"   disabled>%</button>
+    <button onclick="read('s', '.')"    id="comma"  >.</button>
+    <button onclick="read('s', '=')"    id="comp"   >=</button>
+    <button onclick="read('s', 'pi')"   id="pi"     >π</button>
+    <button onclick="read('s', 'ce')"   id="ce"     >CE</button>
+    <button onclick="read('s', 'c')"    id="c"      >C</button>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
